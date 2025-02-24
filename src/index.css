@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply bg-bg;
+  }
+
   body {
     @apply font-poppins text-[16px];
   }
@@ -15,5 +19,23 @@
 
   img {
     @apply block max-w-full;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply mx-auto max-w-[1252px] px-16 max-xl:px-10 max-lg:px-6 max-sm:px-4;
+  }
+
+  .nav-item {
+    @apply font-medium text-[16px] text-white;
+  }
+
+  .section-header {
+    @apply text-5xl text-white;
+  }
+
+  .feature-header {
+    @apply text-xl font-medium text-white;
   }
 }
